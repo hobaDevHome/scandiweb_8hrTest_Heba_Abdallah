@@ -1,0 +1,73 @@
+.main-pro2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-pro{
+    max-width: 1200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color:var(--secondary-light-color);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: row;
+
+}
+.circ{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:var(--secondary-dark-color); 
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 1s;
+}
+.barsec1{
+    background-color: var(--secondary-dark-color);
+    width: 370px;
+    height: 5px;
+    border-radius: 2px;
+    margin-right: 10 px;
+    transition: all .1s;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.span1{
+    width: 100%;
+}
+
+.circ.active {
+    background-color: var(--primary-dark-color);;
+}
+
+.barsec1.activeBar
+{
+    background-color: var(--primary-dark-color);
+    
+}
+
+
+.barsec1 span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: var(--primary-dark-color);
+    animation: progressBar 1s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
